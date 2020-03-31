@@ -3,7 +3,7 @@
 Let's visualize how the cases around the world have increased. We can see that China seems to have flattened the curved, Italy had hit its peak 
 but US still has more day before peaking. 
 
-![](visualize.gif)
+![](vis.gif)
 
 I created this visualization with the help of Plotly in Python.
 

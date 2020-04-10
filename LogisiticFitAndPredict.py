@@ -23,9 +23,15 @@ def predict(xdata, ydata, data, country, day, fitted):
     test = np.arange(len(data) + 7).reshape(-1, 1)
     pred = model.predict(test)
     prediction = pred.round().astype(int)
-    plt.plot(xdata, ydata, label="Confirmed" '-')
+    plt.plot(xdata, ydata, label="Confirmed", markersize=5.0)
     xdata = list(xdata) + list(range(len(xdata), len(xdata) + 7))
-    plt.plot(xdata, prediction, label="Predicted" '-')
+    plt.plot(
+        xdata,
+        prediction,
+        marker='o',
+        linestyle='None',
+        markersize=3.0,
+        label="Predicted")
     plt.legend(loc="upper left")
     newlabel = "Number of Days" + "\n\n" + "Gradual Slow after:" + str(
         int(fitted)) + "\n Peak Day: " + str(int(day))
@@ -49,7 +55,7 @@ def main():
     s = requests.get(url).content
     global_data = pd.read_csv(io.StringIO(s.decode('utf-8')))
     global_data.head()
-    country = "China"
+    country = "US"
     xdata = range(len(global_data.index))
     ydata = global_data[country]
     day, fitted = fitLogCurveByCountries(xdata, ydata)

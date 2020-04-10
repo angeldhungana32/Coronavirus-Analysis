@@ -10,8 +10,9 @@ To run the visualization: python Visualization.py
 
 # Data Analysis in Progress
 
-USA
+
 ![](US.png) 
+###USA
 * This is based on data until April 10, 2020.
 * We can see the gradual decrease in exponential rise around day 72 as predicted based on the current data.
 * US should peak when it will have around 600,000 cases as seen by this model. 

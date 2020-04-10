@@ -5,10 +5,10 @@ but US still has more day before peaking.
 
 ![](vis.gif)
 
-I created this visualization with the help of Plotly in Python.
+I created this visualization with the help of Plotly in Python. This gif has data until March 30, 2020. To see current data, you can download the Visualization.py file and run it.
 To run the visualization: python Visualization.py
 
-# Data Analysis in Progress
+# Data Analysis
 
 
 ![](US.png) 
